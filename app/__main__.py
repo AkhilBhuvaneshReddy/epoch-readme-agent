@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.models import ChatRequest, ChatResponse
 from app.agents import run_genai,run_agent2
 
-app = FastAPI(title="LangChain Gemini Agent Tutorial")
+app = FastAPI(title="Readme Agent Generator")
 
 @app.post("/genai/chat", response_model=ChatResponse)
 def chat_with_agent(payload: ChatRequest):
